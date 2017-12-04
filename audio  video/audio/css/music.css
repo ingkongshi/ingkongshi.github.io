@@ -1,0 +1,202 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+section{
+	width: 1000px;
+	height: 600px;
+	background-color: #336699;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	box-shadow: 10px 10px 15px 2px  #CCCCCC;
+}
+section ul{
+	height: 100%;
+}
+section ul .mleft{
+	width: 30%;
+	background-color: #fafafa;
+	height: 91.666667%;
+	float: left;
+	position: relative;
+}
+section ul .mright{
+	float: left;
+	position: relative;
+	background-size: 100% 100%;
+}
+section .music{
+	width: 100%;			
+	height: 50px;
+	background-color: #C62F2F;
+	float: left;
+	opacity: 0.89;
+	color: #FFFFFF;
+	font-size: 18px;
+	line-height: 50px;
+	padding-left: 10px;
+	box-sizing: border-box;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}		
+.mleft ul .control ul{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.mleft ul .control{
+	width: 100%;
+	height: 8.333333%;
+	background-color: #EEEEEE;	
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+.mleft ul .control .iconfont{
+	font-size: 30px;
+	color: #CCCCCC;
+}
+.mleft ul .control .iconfont:hover{
+	color: #B6353B;
+}
+.mleft ul .musiclist{
+	height: 83.333333%;
+
+}
+.mleft ul .musiclist ul{
+	overflow: hidden;			
+	background-color: #F5F5F7;
+	cursor: pointer;
+	overflow: auto;
+}
+.mleft ul .musiclist ul>li{
+	padding: 20px 20px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #CCCCCC;
+}
+.mright .mcontrol{
+	width: 100%;
+	height: 8.333333%;
+	background-color: #EEEEEE;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.mright .mcontrol .singer{
+	width: 35px;
+	height: 35px;
+	float: left;
+	margin-left: 50px;
+	margin-top: 6px;		
+	border-radius: 50%;
+	background-size: 100%  100%;	
+	background-position: center;
+	animation: move 1.5s linear both infinite;
+	transform-origin:center center center;
+}
+@keyframes move{		
+	100%{
+		transform: rotate(360deg);				
+		}
+}
+.mright .mcontrol .progress{
+	width: 350px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: #999999;
+	float: left;
+	margin: 20px 0px  0px 25px;
+	position: relative;
+}
+.mright .mcontrol .mask{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 99;
+}
+.mright .mcontrol .progress .dot{
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	top: -1px;
+	z-index: 3;
+}
+.progress_son{
+	width: 0px;
+	height: 100%;
+	border-radius: 5px;
+	background-color: #E83C3C;
+}
+.mright .mcontrol .volume{
+	width: 80px;
+	height: 5px;
+	margin-right: 80px;
+	margin-top: 25px;
+	float: right;
+}
+.mright .mcontrol .volume .dot{
+	width: 8px;
+	height: 8px;
+	top: -1.5px;
+	left: 72px;
+}
+.mright .mcontrol .volume .progress_son{
+	width: 100%;
+	background-color: #E83C3C;
+}
+.mright .mcontrol .volum .iconfont{
+	font-size: 20px;
+}
+.mright .mcontrol .volume p{
+	position: absolute;
+	left: -20px;
+	top: -5px;			
+}
+.mright .mcontrol  .vmask{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	position: absolute;
+	top: 0px;
+	left: 0px;		
+	z-index: 999;	
+}
+.mleft ul .musiclist .ac{
+	background-color: #e3e3e5;
+}
+.mright .lyric{
+	width: 700px;
+	height: 400px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 66px;			
+}
+.mright{
+	width: 70%;
+	height: 91.666667%;
+	/*height: 550px;*/
+	overflow: hidden;
+}
+.mright .mcontrol .fullscreen{
+	width: 30px;
+	height: 10px;
+	position: absolute;
+	bottom: 23px;
+	right: 15px;
+	line-height: 20px;
+}
+.mright .mcontrol .fullscreen p{
+	font-size: 25px;
+	color: #CCCCCC;
+}
+.mright .mcontrol .fullscreen p:hover{
+	color: #B6353B;
+}

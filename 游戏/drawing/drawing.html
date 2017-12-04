@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网页绘画工具</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/inde.css"/>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="Psbox">
+		<div class="savebox"></div>
+		<div class="eraser"></div>			
+		<div class="kk">
+			<h2>绘画工具</h2>
+			<div class="mask"></div>
+			<canvas width="500" height="500" style="background:#EAEAEA;display:block;margin:0px auto;"></canvas>
+		</div>		
+	</div>
+	<div class="set">
+		<div class="setmask"></div>
+		<h2 style="background-color: #EDCF72;">设置栏</h2>
+		<button class="move" style="margin-bottom: 5px; margin-left: 20%;">按住此处拖动设置栏</button>
+		<br>
+		▷工具：<select name="type" id="" value="" style="margin-bottom: 5px;">
+					<option value="line">线</option>
+					<option value="pencil">铅笔</option>
+					<option value="rect">矩形</option>
+					<option value="circle">圆形</option>
+					<option value="eraser">橡皮擦</option>
+					<option value="poly">多边形</option>
+					<option value="star">多角形</option>
+					<option value="fanxiang">反相</option>
+					<option value="grey">黑白</option>
+					<option value="masaike">马赛克</option>	
+				</select>
+		<br />
+		<div class="kuang" style="width: 100%; height: 2px; background-color: #FFFFFF;margin-bottom: 5px;"></div>	
+		▷方式：<select name="option" id="" style="margin-bottom: 5px;">
+					<option value="fill">填充</option>
+					<option value="stroke">边框</option>
+				</select>
+		<br />	
+		<div class="kuang" style="width: 100%; height: 2px; background-color: #FFFFFF;margin-bottom: 5px;"></div>
+		▷背景色：<input type="color" name="can" style="margin-bottom: 5px;">
+		<br />
+		<div class="kuang" style="width: 100%; height: 2px; background-color: #FFFFFF;margin-bottom: 5px;"></div>
+		▷填充色：<input type="color" name="fill" style="margin-bottom: 5px;">
+		<br />
+		<div class="kuang" style="width: 100%; height: 2px; background-color: #FFFFFF;margin-bottom: 5px;"></div>
+		▷线框色：<input type="color" name="stroke" style="margin-bottom: 5px;">
+		
+		<br />
+		<div class="kuang" style="width: 100%; height: 2px; background-color: #FFFFFF;margin-bottom: 5px;"></div>		
+		▷角数：<input type="number" name="nums" value="5" style="width: 40px;margin-bottom: 5px;" />
+		<br />
+		<div class="kuang" style="width: 100%; height: 2px; background-color: #FFFFFF;margin-bottom: 5px;"></div>	
+		
+		▷边数：<input type="number" name="num" value="5" style="width: 30px;margin-bottom: 5px;" />
+		<br />
+		<div class="kuang" style="width: 100%; height: 2px; background-color: #FFFFFF;margin-bottom: 5px;"></div>	
+		▷选择图片：<input type="file" name="files" id="files"  style="margin-bottom: 5px;"/>
+		<br />
+		<div class="kuang" style="width: 100%; height: 2px; background-color: #FFFFFF;margin-bottom: 5px;"></div>	
+		<input type="button" value="保存画布内容" name="save">
+		<br />
+		<div class="kuang" style="width: 100%; height: 2px; background-color: #FFFFFF;margin-bottom: 5px;"></div>	
+		<input type="button" name="che"  value="撤销上一步" / style="margin-bottom: 5px;">
+		<br />
+		<div class="kuang" style="width: 100%; height: 2px; background-color: #FFFFFF;margin-bottom: 5px;"></div>	
+		<button class="clear">清除画布</button>	
+	</div>
+</body>
+</html>

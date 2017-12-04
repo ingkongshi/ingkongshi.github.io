@@ -1,0 +1,92 @@
+@col:12;
+@lg:1200px;
+@md:992px;
+@sm:768px;
+
+.container-fluid{
+	width:100%;
+	box-sizing:border-box;
+	padding: 0px 15px;
+	display:block;
+}
+.container{
+	width:1200px;
+	margin:0px auto;
+	box-sizing:border-box;
+	padding:0 15px;
+	.row{
+		margin:0 -15px;
+		display:block;
+		&:after{
+			display:block;
+			content: '';
+			clear: both;
+		}
+	}
+}
+.hidden(@type){
+	.col-@{type}-hidden{
+		display:none;
+	}
+}
+.hidden(lg);
+[class*=col]{
+	position: relative;
+	float:left;
+	box-sizing:border-box;
+}
+.loop(@type,@i:1) when (@i<=@col){
+	.col-@{type}-@{i}{
+		width:@i/@col*100%;
+	}
+	.col-@{type}-offset-@{i}{
+		margin-left:@i/@col*100%;
+	}
+	.col-@{type}-push-@{i}{
+		left:@i/@col*100%;
+	}
+	.col-@{type}-pull-@{i}{
+		right:@i/@col*100%;
+	}
+	.loop(@type,@i+1);
+}
+.loop(lg);
+@media screen and (max-width:@lg) and (min-width:@md){
+	.container{
+		width:970px;
+	}
+	.loop(md);
+	.hidden(md);
+}
+@media screen and (max-width:@md) and (min-width:@sm){
+	.container{
+		width:750px;
+	}
+	.loop(sm);
+	.hidden(sm);
+	.ico{
+		display:block;
+	}
+	.icon{
+		display:block;
+	}
+	.fu{
+		display:block;
+	}
+}
+@media screen  and (max-width:@sm){
+	.container{
+		width:100%;
+	}
+	.loop(xs);
+	.hidden(xs);
+	.ico{
+		display:block;
+	}
+	.icon{
+		display:block;
+	}
+	.fu{
+		display:block;
+	}
+}

@@ -1,0 +1,99 @@
+.bgimg{
+	width: 100%;
+	height: 100%;
+}
+.todolist{
+	width: 35%;
+	height: 80%;
+	background-color: rgba(252,252,252,.6);
+	position: absolute;
+	top: 8%;
+	right: 8%;
+	border: 1px solid darkgray;
+	padding: 5px;
+}
+h2{
+	text-align: center;
+	line-height: 40px;
+	font-family: "Times New Roman";
+	font-style: oblique;
+	border-bottom:1px solid #CCCCCC ;
+}
+.todolist .tops{
+	width: 100%;
+	height: 40px;
+	margin-top: 5px;
+}
+.todolist .tops input{
+	outline: none;
+	border: none;
+}
+.todolist .tops input:first-of-type{
+	width: 85%;
+	height: 100%;
+	margin-left: 5px;
+	font-size: 20px;
+	padding-left: 5px;
+}
+.todolist .tops input:last-of-type{
+	width: 12%;
+	height: 100%;
+	font-size: 20px;
+	background-color: #FFFFFF;
+	float: right;
+}
+.todolist .tops input:first-of-type:hover{
+	outline: 1px solid rgba(1,186,255,0.6);
+}
+.todolist .middle{
+	width: 100%;
+	height: auto;
+}
+.todolist .middle .leftSheet{
+	width: 100%;
+}	
+.todolist .middle .leftSheet li{
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	background: #fff;
+	width: 100%;
+	height: 40px;
+	margin: 5px auto;
+}
+.leftSheet li input{
+	width: 20px;
+	height: 20px;
+	margin-top: 10px;
+	margin-left: 5px;
+	outline: none;
+}
+.leftSheet li p{
+	line-height: 40px;
+	flex-grow: 1;
+	padding-left: 10px;
+	height: 100%;
+}
+.leftSheet li div{
+	color: red;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	font-size: 30px;
+	line-height: 40px;
+}
+.bottom{
+	width: 120px;
+	height: 40px;
+	position: absolute;
+	bottom: 5%;
+	left: 40%;
+}
+.bottom input{
+	width: 100%;
+	height: 100%;
+	font-size: 15px;
+}
+.bottom input:hover{
+	color: red;
+}

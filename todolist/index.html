@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>todolist</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>	
+	<img class="bgimg" src="img/1.jpg"/>
+	<div class="todolist">
+		<h2>TodoList</h2>
+		<div class="tops">	
+			<input type="text" name="con" placeholder="请输入待办事项">
+			<input type="button"  name="ti" value="提交">
+		</div>
+		<div class="middle">
+			<h2>Progress</h2>
+			<ul class="leftSheet">
+				<li>
+					<input type="checkbox">
+					<p>Hello,欢迎使用todolist</p>
+					<div class="cancel checkbox">×</div>
+				</li>
+			</ul>
+			<h2 style="margin-top: 5px;">Completed</h2>
+			<ul class="rightSheet leftSheet">
+				<li>
+					<input type="checkbox" checked="true">
+					<p  class="del">已完成事项</p>
+					<div class="cancel checkbox">×</div>
+				</li>
+			</ul>
+		</div>
+		<div class="bottom">
+			<input type="button"  name="clear"  value="清空所有事项">
+		</div>
+	</div>
+</body>
+<!--<script type="text/javascript">
+	var con=document.querySelector('input[type=text]');   //要添加的内容
+	var ti=document.querySelector('input[name=ti]');     //提交按钮
+	var clear=document.querySelector('input[name=clear]')    //清空按钮
+	var leftsheet=document.querySelector('.leftSheet');       //左边loading框
+	var rightsheet=document.querySelector('.rightSheet');	 //右边success框
+	
+	ti.onclick=function(){
+		if(con.value==""){
+			alert("内容不能为空");
+		} else if(con.value.trim()){
+			var li =document.createElement('li');
+			li.innerHTML=`
+				<input type="checkbox">
+				<p>${con.value}</p>
+				<div class="cancel checkbox">×</div>
+				`;
+			leftsheet.appendChild(li);
+			setdata(con.value);
+			writedata();
+			con.value='';
+		}
+	}
+	clear.onclick=function(){
+		localStorage.clear();
+		writedata();
+	}
+	function getdata(){
+		var arr=localStorage.data?JSON.parse(localStorage.data):[];    //JSON.parse（）解析一个JSON字符串，
+		return arr;
+	}
+	function setdata(value){
+		var arr =getdata();
+		arr.push({con:value,status:false});
+		localStorage.data=JSON.stringify(arr);   //JSON.stringify(arr)将一个  JavaScript 值转换为一个 JSON 字符串
+	}
+	function changes(index,bool){
+		var arr=getdata();
+		arr[index].status=bool;   //?
+		localStorage.data=JSON.stringify(arr);
+		writedata();
+	}
+	function del(index){
+		var arr=getdata();
+		arr.splice(index,1);
+		localStorage.data=JSON.stringify(arr);
+		writedata();
+	}
+	function writedata(){
+		var arr =getdata();
+		var now='';
+		var old='';
+		arr.forEach(function(val,index){
+			if (val.status==false) {
+				alert(2)
+				now+=`
+				<li index=${index}>
+				<input type="checkbox" onclick=changes(${index},true)>
+				<p>${val.con}</p>
+				<div class="cancel checkbox" onclick=del(${index})>×</div>
+				</li>
+				`;
+			} else if(val.status==true){
+				old+=`
+				<li index=${index}>
+				<input type="checkbox" checked="true" onclick=changes(${index},false)>
+				<p>${val.con}</p>
+				<div class="cancel checkbox" onclick=del(${index})>×</div>
+				</li>`;
+			}
+		})
+		leftsheet.innerHTML=now;
+		rightsheet.innerHTML=old;
+	}
+	window.onload=writedata;	
+</script>-->
+</html>

@@ -1,0 +1,86 @@
+body{
+	background: url(../img/center.jpg);
+	background-size: cover;
+}
+canvas,.item{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	right: 0px;
+	margin:20px auto;
+}
+canvas{
+	display:block;
+	margin-top:60px;
+	background-color: #D5B699;
+	box-shadow: -1px -1px 50px  8px rgba(192,192,192,0.6);
+}
+.item{
+	width: 600px;
+	height: 600px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 0px 500px rgba(0,0,0,0.5);
+	z-index: 2;
+	transform: scale(0,0);
+	transition: transform 0.5s;		
+}
+.item a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.item a img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+input[type='button']{
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	z-index: 10;
+	background-color: #FF6700;
+	padding: 5px 8px;
+	border: none;
+}
+.imgs{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top:5px;
+	left: 100px;
+}
+.active{
+	transform: scale(1,1);
+}
+.mask{
+	width: 600px;
+	height: 600px;	
+}
+.white{
+    width: 300px;
+    height: 200px;
+    background-color: #f4f1f1;
+    position: absolute;
+    top: -40%;
+    left: 40%;
+}
+.white span{
+	width: 100%;
+	font-size: 30px;
+	 font-family: tahoma, helvetica neue, helvetica, arial, sans-serif;
+	display: block;
+	text-align: center;
+	line-height: 10px;
+	color: #000000;
+	margin-top: 60px;
+} 
+.white button{
+	width: 100px;
+	height: 30px;
+	border: none;
+	border-radius: 20px;
+	margin-top: 60px;
+    margin-left: 100px;
+}

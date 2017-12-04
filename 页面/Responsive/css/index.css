@@ -1,0 +1,142 @@
+body{
+	overflow: hidden;
+	height: 100%;
+}
+.daohang {
+	width: 100%;
+	height:31.2px;
+  	position: absolute;
+	top: 6%;
+	left: 55%;
+}
+.daohang li a{
+	color: #FFFFFF;
+}
+.daohang li{
+	float: left;
+	color: #fff;
+	margin-right: 60px;
+}
+.mask{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.row{
+	height: 80px;
+}
+.row .logo{
+	width: 50px;
+	height: 50px;
+	z-index: 20;
+	position: absolute;
+	top: 20px;
+	left: 200px;
+}
+.row .logo img{
+	width: 50px;
+}
+.row .daohang li>a>i{
+	background-color: #FFFFFF;
+    display: block;
+    overflow: hidden;
+    margin-top: 10px;
+    width: 0;
+    height: 1px;
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+.row .daohang li>a>i:hover{
+	width: 100%;
+    opacity: 1;
+}
+.ico{
+	width: 47px;
+    height: 45px;
+    border: 2px solid #fff;
+    color: #fff;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    box-sizing: border-box;
+}
+.icon{
+	width: 47px;
+    height: 45px;
+    border: 2px solid #fff;
+    color: #fff;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    box-sizing: border-box;
+	visibility: hidden;
+}
+.ic{
+	display: block;
+	width: 47px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	font-size: 20px;
+	overflow: hidden;
+}
+.icon:hover{
+	border: none;
+}
+.ico:hover{
+	border: none;
+}
+.fu{
+	width: 0;
+	height: 100%;
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.fu li{
+	width: 100%;
+	height: 36px;
+	text-align: center;
+	line-height: 36px;
+}
+.fu li a{
+	color: #000000;
+}
+.con{
+	width: 161px;
+	height: 161px;
+	position: absolute;
+	top: 30%;
+    left: 40%;
+    right: 0;
+    bottom: 0;
+    color: #FFFFFF;
+}
+.con img{
+	width: 100%;
+}
+.img{
+	width: 262px;
+	height: 106px;
+	position: absolute;
+	top: 50%;
+	left: 36%;
+}
+.img img{
+	width: 100%;
+}
+.col-md-1{
+	display: block;
+}
+.col-sm-1{
+	display: block;
+}
+.col-xs-1{
+	
+}

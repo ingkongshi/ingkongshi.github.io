@@ -1,0 +1,72 @@
+		*{
+			margin: 0;
+			top: 0;
+			list-style: none;
+		}
+		.scen{
+			width: 375px;
+			height: 667px;
+			background: url(img/phone.svg) no-repeat;
+			background-size: 100% 100%;
+			position: relative;
+		}
+		.scenename{
+			position: absolute;
+			top: 65px;
+			left: 25px;
+			color: #fff;
+			width: 320px;
+			height: 30px;
+			line-height: 30px;
+			overflow: hidden;
+			text-align: center;
+			font-size: 18px;
+		}
+		.phonebox{
+			width: 100%;
+			height: auto;
+			position: relative;
+		}
+		.phonebox .audiobtn{
+			position: absolute;
+			width: 15px;
+			height: 15px;
+			right: 35px;
+			top: 105px;
+			z-index: 999;	
+		}
+		.phonebox .audiobtn .abtn{
+			animation: move 1.5s linear both infinite;
+			transform-origin:center center center;
+		}
+		@keyframes move{		
+				100%{
+					transform: rotate(360deg);				
+					}
+		}
+		.phonebox .content .one{
+			width: 255px;
+		    height: 262px;
+		    border-radius: 50px;
+		    position: absolute;
+		    top: 180px;
+		    left: 60px;
+		}
+		.phonebox .content .one img{
+			width: 255px;
+		    height: 262px;
+		    border-radius: 50px;
+		}
+		.phonebox .content .two{
+			width: 91px;
+			height: 24px;
+			position: absolute;
+			bottom:100px;
+			left: 60px;
+		}
+		.phonebox .name{
+			width: 100%;
+			height: 24px;
+			line-height: 24px;
+			text-align: center;
+		}

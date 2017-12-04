@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>音乐控件</title>
+		<link rel="stylesheet" type="text/css" href="iconfont/font_414337_hi6m4w8vbod5nrk9/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="iconfont/3/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/music.css"/>
+		<script src="js/音乐播放器.js"></script>
+	</head>
+	<style type="text/css">
+
+	</style>
+	<body>
+		<audio src="music/阴天.mp3"></audio>
+		<section>
+			<ul class="all">
+				<li class="music">MY MUSIC PLAYER</li>
+				<li class="mleft">
+					<ul>
+						<li class="control">
+							<ul>
+								<li class="iconfont">&#xe62f;</li>
+								<li class="iconfont" style="font-size: 35px;">&#xe604;</li>
+								<li class="iconfont">&#xe64d;</li>
+							</ul>
+						</li>
+						<!--播放暂停上下按钮-->
+						<li class="musiclist">
+							<ul></ul>
+						</li>
+						<!--列表-->
+					</ul>
+				</li>
+				<!--左部分包含列表播放按钮-->
+				<li class="mright">
+					<ul class="lyric"></ul>
+					<!--歌词-->
+					<ul class="mcontrol">
+						<li class="singer"></li>
+						<li class="progress">	
+								<div class="progress_son"></div>
+								<div class="dot"></div>
+								<div class="mask"></div>
+								<div class="time" style="float: right; font-size: 10px;color: #333;">00:00/00:00</div>	
+						</li>
+						<li class="volume progress">
+							<div class="vmask"></div>
+							<p class="iconfont" style="color: #999999">&#xe60a;</p>
+							<div class="progress_son"></div>
+							<div class="dot"></div>
+						</li>
+						<li class="fullscreen">
+							<!--<p class="iconfont">&#xe64e;</p>-->
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+	</body>
+	
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="x5-orientation" content="portrait | landscape" />
+		<meta name="screen-orientation" content="portrait">
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="full-screen" content="yes">
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<title>weather</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/weather.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="icfont/font_4/iconfont.css"/>
+		<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.animate1.0.2.min.js" type="tex t/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>	
+	<video width="1656" height="auto" loop="loop" autoplay="autoplay">
+		<source src="video/video830.mp4" type="video/mp4">	
+	</video>
+	<div class="swiper-container" style="height: 100%;"> 
+		<div class="swiper-wrapper" style="height: 100%;">
+		    <div class="swiper-slide one">
+		    	<div class="weather">
+		    		<div class="tops">
+		    			<span class="location">NA</span>
+		    			<span style="margin-left: -10px;">实况天气</span>
+						<span class="date">NA年NA月NA日</span>
+						<div class="search">
+						    <div class="btn">搜索</div>
+						    <input class='ones' type="text" placeholder="请输入要查找的城市" onchange="this.blur();" onblur="this.style.width='30px';this.value='';flage=true">
+						</div>
+		    		</div>					
+					<ul class="one">
+						<li class="du">NA</li><span>℃</span>				
+						<li class="now"></li>
+						<li class="icon"><img src="" /></li>
+					</ul>
+				</div>	
+		    </div>
+		    <div class="swiper-slide two">
+		    	<ul class="alert">
+		    		<p>生活指数</p>	    	
+		    		<li><span class="iconfont">&#xe610;</span><span class="comf"></span></li>
+		    		<li><span class="iconfont">&#xe607;</span><span  class="cw"></span></li>
+		    		<li><span class="iconfont">&#xe600;</span><span class="drsg"></span></li>
+		    		<li><span class="iconfont">&#xe70b;</span><span class="sport"></span></li>
+		    		<li><span class="iconfont">&#xe606;</span><span class="trav"></span></li>
+		    		<li><span class="iconfont">&#xe612;</span><span class="uv"></span></li>
+		    	</ul>
+		    </div>
+		    <div class="swiper-slide">
+		    	<ul>
+		    		
+		    	</ul>
+		    </div>
+	  	</div>
+	</div>	
+	</body>
+</html>

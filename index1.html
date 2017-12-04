@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="x5-orientation" content="portrait | landscape" />
+		<meta name="screen-orientation" content="portrait">
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="full-screen" content="yes">
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<meta charset="UTF-8">
+		<title>作品展览</title>
+		<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/swiper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<strong> Javascript阶段作品展示 </strong>
+		<p>WUIF1706班尚松博</p>
+		<div class='btn-container'>
+		  <button class='btn btn--shockwave is-active'>
+		  	<!--Shockwave-->
+		  	<a href="页面/xiaomi/index.html" target="_blank">1.小米</a>
+		  </button>
+		  <button class='btn btn--jump'>
+		   <!-- Jump-->
+		   <a href="页面/tmall/index.html" target="_blank">2.天猫</a>
+		  </button>
+		  <button class='btn btn--wiggle'>
+		    <!--Wiggle-->
+		    <a href="todolist/index.html" target="_blank">3.ToDoList</a>
+		  </button>
+		  <button class='btn btn--pulse'>
+		    <!--Pulse-->
+		    <a href="audio  video/audio/MusicPlayer.html" target="_blank">4.音乐播放器</a>
+		  </button>
+		  <button class='btn btn--blink'>
+		    <!--Blink-->
+		    <a href="audio  video/video/VideoPlayer.html" target="_blank">5.视频播放器</a>
+		  </button>
+		  <button class='btn btn--pulse'>
+		    <!--Blink-->
+		    <a href="游戏/snake/snake.html" target="_blank">6.贪吃蛇</a>
+		  </button>
+		  <button class='btn btn--pulse'>
+		    <!--Blink-->
+		    <a href="游戏/chess/chess.html" target="_blank">7.五子棋</a>
+		  </button>
+		  <button class='btn btn--blink'>
+		    <!--Blink-->
+		    <a href="游戏/drawing/drawing.html" target="_blank">8.画板</a>
+		  </button>
+		  
+		    <button class='btn btn--jump'>
+		   <!-- Jump-->
+		   <a href="游戏/poker/pokergame.html" target="_blank">9.扑克游戏</a>
+		  </button>
+		  <button class='btn btn--wut'>
+		    <!--Hatching Alien-->
+		    <a href="weather/index.html" target="_blank">10.天气预报</a>
+		  </button>
+		  <button class='btn btn--pulse'>
+		    <!--Blink-->
+		    <a href="页面/Responsive/index.html" target="_blank">11.响应式</a>
+		  </button>
+		  <button class='btn btn--pulse'>
+		    <!--Blink-->
+		    <a href="">谢谢观赏</a>
+		  </button>
+		</div>		
+	</body>
+	<script type="text/javascript">
+		document.addEventListener('click', click);
+		function click(e) {
+		  let el
+		  
+		  el = e.target
+		  
+		  if (el !== e.currentTarget) {
+		    if(el.nodeName === 'BUTTON') {
+		      
+		       if(el.classList.contains('is-active')) {
+		         el.classList.remove('is-active')
+		       } else {
+		         el.classList.add('is-active')
+		       }
+		    }
+		  }
+		  event.stopPropagation()
+		}
+	</script>
+</html>
